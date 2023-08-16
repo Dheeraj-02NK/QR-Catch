@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAD1B1"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#F46538"
+            android:text="QR CATCH"
+            />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:src="@drawable/iiiii"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"/>
+        <Button
+            android:id="@+id/buttonTakePicture"
+            android:layout_width="match_parent"
+            android:backgroundTint="#F46538"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/white"
+            android:text="Scan BarCode" />
+        <Button
+            android:id="@+id/buttonScanBarcode"
+            android:layout_width="match_parent"
+            android:backgroundTint="#F46538"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:outlineSpotShadowColor="@color/white"
+            android:text="Scan QR code" />
+
+    </LinearLayout>
+</RelativeLayout>
